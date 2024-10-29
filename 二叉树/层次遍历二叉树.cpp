@@ -33,7 +33,6 @@ int main() {
     root->left->right = new TreeNode(5);
 
     // 进行层次遍历
-    cout << "层次遍历结果: ";
     levelOrderTraversal(root);
     cout << endl;
 

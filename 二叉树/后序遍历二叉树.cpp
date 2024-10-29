@@ -30,7 +30,6 @@ int main() {
     root->left->right = new TreeNode(5);
 
     // 进行后序遍历
-    cout << "后序遍历结果: ";
     postorderTraversal(root);
     cout << endl;
 
