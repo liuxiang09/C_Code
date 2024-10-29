@@ -9,7 +9,7 @@ void maxHeapify(vector<int>& arr, int i, int HeapSize) {
     if (i < HeapSize) {
         int left = 2 * i, right = left + 1;
         int largest = i;
-        //β�ݹ鷽ʽ
+        
         if (left < HeapSize && arr[left] > arr[largest]) {
             largest = left;
         }
