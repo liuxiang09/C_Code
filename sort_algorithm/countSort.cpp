@@ -1,10 +1,10 @@
 #define _CRT_SECURE_NO_WARNINGS
+#include <algorithm>
 #include <iostream>
-#include<vector>
-#include<algorithm>
+#include <vector>
 using namespace std;
 
-void bucketSort(vector<int>& arr) {
+void bucketSort(vector<int> &arr) {
     // 找到数组中的最大值
     int max = *max_element(arr.begin(), arr.end());
     // 创建计数数组
@@ -16,7 +16,7 @@ void bucketSort(vector<int>& arr) {
     // 将数组中的数据放回原数组
     int index = 0;
     for (int i = 0; i < bucket.size(); i++) {
-        while (bucket[i] > 0) { 
+        while (bucket[i] > 0) {
             arr[index++] = i;
             bucket[i]--;
         }
@@ -28,12 +28,11 @@ void bucketSort(vector<int>& arr) {
     cout << endl;
 }
 
-int main(){
+int main() {
     // 读入数据
-    vector<int> arr = { 1, 3, 5, 7, 9, 2, 4, 6, 8, 0 };
+    vector<int> arr = {1, 3, 5, 7, 9, 2, 4, 6, 8, 0};
     // 计数排序
     bucketSort(arr);
 
-    
     return 0;
 }

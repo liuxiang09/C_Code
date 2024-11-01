@@ -1,15 +1,15 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include <iostream>
-#include <vector>
 #include <algorithm>
+#include <iostream>
 #include <utility>
+#include <vector>
 using namespace std;
 
-void maxHeapify(vector<int>& arr, int i, int HeapSize) {
+void maxHeapify(vector<int> &arr, int i, int HeapSize) {
     if (i < HeapSize) {
         int left = 2 * i, right = left + 1;
         int largest = i;
-        
+
         if (left < HeapSize && arr[left] > arr[largest]) {
             largest = left;
         }
@@ -23,14 +23,14 @@ void maxHeapify(vector<int>& arr, int i, int HeapSize) {
     }
 }
 
-void buildMaxHeap(vector<int>& arr) {
+void buildMaxHeap(vector<int> &arr) {
     int len = arr.size();
     for (int i = len / 2 - 1; i >= 0; i--) {
         maxHeapify(arr, i, len);
     }
 }
 
-void heapSort(vector<int>& arr) {
+void heapSort(vector<int> &arr) {
     int len = arr.size();
     buildMaxHeap(arr);
     for (int i = len - 1; i > 0; i--) {
@@ -40,7 +40,7 @@ void heapSort(vector<int>& arr) {
 }
 
 int main() {
-    vector<int> arr = { 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5 };
+    vector<int> arr = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5};
     heapSort(arr);
     for (int i = 0; i < arr.size(); i++) {
         cout << arr[i] << " ";

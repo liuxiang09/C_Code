@@ -1,16 +1,16 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include <vector>
 #include <algorithm>
 #include <iostream>
+#include <vector>
 using namespace std;
 
-//基数排序，输入待排序数组，返回排序好的数组,exp为位数
-//时间复杂度：O(n)
-// 基数排序的计数排序部分
-void Counting_Sort(vector<int>& arr, int exp) {
+// 基数排序，输入待排序数组，返回排序好的数组,exp为位数
+// 时间复杂度：O(n)
+//  基数排序的计数排序部分
+void Counting_Sort(vector<int> &arr, int exp) {
     int n = arr.size();
     vector<int> temp(n);
-    int count[10] = { 0 }; // 0-9的数字
+    int count[10] = {0}; // 0-9的数字
 
     // 处理每个数字的计数
     for (int i = 0; i < n; i++)
@@ -32,7 +32,7 @@ void Counting_Sort(vector<int>& arr, int exp) {
 }
 
 // 基数排序主函数
-void Radix_Sort(vector<int>& arr) {
+void Radix_Sort(vector<int> &arr) {
     // 找到最大值以确定位数
     int max_val = *max_element(arr.begin(), arr.end());
     // 进行基数排序，从最低位到最高位
@@ -42,7 +42,7 @@ void Radix_Sort(vector<int>& arr) {
 
 // 测试代码
 int main() {
-    vector<int> arr = { 170, 45, 75, 90, 802, 24, 2, 66 };
+    vector<int> arr = {170, 45, 75, 90, 802, 24, 2, 66};
     Radix_Sort(arr);
     for (int num : arr)
         cout << num << " ";

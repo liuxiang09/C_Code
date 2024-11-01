@@ -1,9 +1,9 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 using namespace std;
 
-void bucketSort(vector<int>& arr) {
+void bucketSort(vector<int> &arr) {
     // 定义桶的数量
     int bucketCount = 10;
     int maxVal = *max_element(arr.begin(), arr.end());
@@ -37,11 +37,11 @@ void bucketSort(vector<int>& arr) {
     cout << endl;
 }
 
-int main(){
+int main() {
     // 读入数据
-    vector<int> arr = { 1, 31, 5, 7, 9, 2, 4, 6, 8, 0, 10, 61, 45, 21, 31, 123 };
+    vector<int> arr = {1, 31, 5, 7, 9, 2, 4, 6, 8, 0, 10, 61, 45, 21, 31, 123};
     // 桶排序
     bucketSort(arr);
-    
+
     return 0;
 }

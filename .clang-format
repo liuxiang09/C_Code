@@ -1,0 +1,7 @@
+BasedOnStyle: LLVM          # 以 LLVM 风格为基础
+IndentWidth: 4              # 缩进宽度为 4 个空格
+TabWidth: 4                 # Tab 键等于 4 个空格
+UseTab: Never               # 不使用 Tab 键，仅使用空格
+BreakBeforeBraces: Attach   # 大括号在同一行
+AllowShortIfStatementsOnASingleLine: true  # 单行 if 语句允许在同一行
+ColumnLimit: 0              # 不限制每行的字符数
