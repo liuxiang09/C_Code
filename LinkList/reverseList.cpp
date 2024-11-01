@@ -34,5 +34,6 @@ int main() {
         cout << res->val << " ";
         res = res->next;
     }
+    cout << endl;
     return 0;
 }
