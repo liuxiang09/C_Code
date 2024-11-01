@@ -21,7 +21,6 @@ int partition(vector<int> &arr, int start, int end) {
             j--;
         }
     }
-    // 这个语句同时处理多个情况，包括特殊情况
     if (i == j && arr[j] > pivot) j--;
     swap(arr[j], arr[start]);
     return j;
