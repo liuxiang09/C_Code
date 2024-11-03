@@ -25,23 +25,42 @@
 
 ### 📝 链表
 
-<!-- 链表相关算法待添加 -->
+#### 基础操作
+
+- [链表创建与遍历](path/to/createList.cpp)
+- [链表插入与删除](path/to/insertDelete.cpp)
+
+#### 常见算法
+
+- [查找倒数第 N 个节点](LinkList/findNthFromEnd.cpp)
+- [链表反转](path/to/reverseList.cpp)
+- [链表合并](path/to/mergeLists.cpp)
+- [环形链表检测](path/to/cycleDetect.cpp)
+- [链表中点查找](path/to/findMiddle.cpp)
 
 ## 💡 如何使用
 
 1. 克隆仓库
 
-git clone [repository-url] 2. 进入对应目录并编译运行需要的算法文件
+```bash
+git clone https://github.com/liuxiang09/C_Code.git
+```
 
+2. 进入对应目录并编译运行需要的算法文件
+
+```bash
 g++ filename.cpp -o filename
+```
 
 ## 📝 项目结构
 
+```
 .
 ├── Sort/ # 排序算法
 ├── Tree/ # 树相关算法
 ├── LinkedList/ # 链表相关算法
 └── README.md
+```
 
 ## 🤝 贡献指南
 
